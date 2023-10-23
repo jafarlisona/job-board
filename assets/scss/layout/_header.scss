@@ -1,0 +1,33 @@
+header {
+    background-image: url("https://preview.colorlib.com/theme/jobboard2/img/banner/banner.png.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .header {
+        background-image: url(https://preview.colorlib.com/theme/jobboard2/img/banner/illustration.png.webp);
+        height: 93vh;
+        max-width: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-position-x: 730px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        padding-left: 210px;
+        h2{
+            font-size: 30px;
+            font-weight: 400;
+        }
+        h1{
+            font-size: 55px;
+            font-weight: 500;
+        }
+        p{}
+        a{
+            @include button($width:212px);
+            margin-top: 30px;
+        }
+    }
+}

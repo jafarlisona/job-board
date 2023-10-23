@@ -1,0 +1,151 @@
+footer {
+    color: #AAB1B7;
+    background-color: #001D38;
+    width: 100%;
+
+    .footer {
+        display: flex;
+        min-height: 595px;
+        align-items: center;
+        gap: 100px;
+        justify-content: center;
+
+        .logos {
+            img {
+                margin-bottom: 30px;
+            }
+
+            p {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+
+            .medias {
+                display: flex;
+                gap: 10px;
+                margin-top: 50px;
+
+                .media {
+                    border-radius: 50%;
+                    border: 1px solid #334A60;
+                    height: 40px;
+                    width: 40px;
+                    display: grid;
+                    place-items: center;
+                    color: #334A60;
+
+                    &:hover {
+                        background-color: $green;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .company-list-footer {
+
+            p {
+                font-size: 18px;
+                color: white;
+                margin-bottom: 50px;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+
+                li {
+                    a {
+                        color: #AAB1B7;
+                        font-size: 14px;
+
+                        &:hover {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .category-list-footer {
+            p {
+                font-size: 18px;
+                color: white;
+                margin-bottom: 50px;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+
+                li {
+                    a {
+                        color: #AAB1B7;
+                        font-size: 14px;
+
+                        &:hover {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .subscribe {
+            margin-bottom: 50px;
+
+            span {
+                display: inline-block;
+                font-size: 18px;
+                color: white;
+                margin-bottom: 40px;
+            }
+
+            form {
+                position: relative;
+                width: 350px;
+                height: 50px;
+                margin-bottom: 25px;
+
+                input {
+                    width: 350px;
+                    height: 50px;
+                    background-color: #001d3800;
+                    outline: none;
+                    border: 1px solid #334A60;
+                    border-radius: 5px;
+                    font-size: 14px;
+                    padding-left: 20px;
+                }
+
+                a {
+                    @include button($width: 110px, $height: 40px);
+                    padding: 10px 20px;
+                    position: absolute;
+                    right: 5px;
+                    top: 5px;
+                }
+            }
+
+            p {
+                width: 350px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .copyright {
+        p {
+            font-weight: 400;
+            text-align: center;
+            padding-bottom: 35px;
+            font-size: 14px;
+
+            a {
+                color: $green;
+            }
+        }
+    }
+}
